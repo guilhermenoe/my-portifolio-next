@@ -20,7 +20,6 @@ export default function Home() {
         <a className="btn-primary" href="mailto:guilherme.snoe@gmail.com">
           contact me
           <EmailIcon />
-
         </a>
       </div>
     </main>

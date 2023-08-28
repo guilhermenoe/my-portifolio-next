@@ -1,5 +1,7 @@
 :root {
- --card-border-rgb: 131, 134, 135;
+  --text-primary: #fff;
+  --text-secundary: #b3b3b3;
+  --bg-primary: #2c2c2c;
 }
 
 * {
@@ -15,14 +17,10 @@ body {
 }
 
 body {
-}
-
-a {
-
+  background-color: var(--bg-primary);
 }
 
 @media (prefers-color-scheme: dark) {
   html {
-    
   }
 }

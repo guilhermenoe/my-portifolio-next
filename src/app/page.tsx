@@ -2,32 +2,27 @@ import Header from './components/header/header'
 import './components/styles/home.scss'
 import './components/experience/experience.scss'
 import { Experience } from './components/experience/experience'
+import AboutMe from './components/about/about'
+import Image from 'next/image'
+import EmailIcon from './components/icons/email-icon'
+import SocialButtons from './components/social-buttons/social-buttons'
 
 export default function Home() {
   return (
     <main className='container'>
-      <Header/>
-      <Experience/>
-
-
-        <div className="infos">
-          <h3>lenguagem</h3>
-          <div className="lenguages-infos">
-            <span>en - none</span>
-            <span>PT-BR - Native Speaker</span>
-          </div>
-          <div className="education-info">
-            <h3>education</h3>
-            <span>🎓</span>
-            <span>texto</span>
-          </div>
+      <Header />
+      <Experience />
+      <AboutMe />
+      <div className="buttons">
+        <div className="social">
+          <SocialButtons />
         </div>
-        <div className="buttons">
-          <div className="social">
+        <a className="btn-primary" href="mailto:guilherme.snoe@gmail.com">
+          contact me
+          <EmailIcon />
 
-          </div>
-          <button>contact me</button>
-        </div>
+        </a>
+      </div>
     </main>
   )
 }

@@ -1,0 +1,23 @@
+.infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+
+    gap: 24px;
+
+    grid-area: info;
+    
+    .lenguages-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        width: 100%;
+    }
+
+    span{
+        color: var(--text-secundary);
+    }
+}
